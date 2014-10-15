@@ -4,7 +4,10 @@ var mongoose = require('mongoose');
 var users = require('./routes/users');
 var app = express();
 
-var dbName = "userDB";
+
+app.set('environment', process.env.EXPRESS_ENV || "development");
+
+var dbName = "userdb_" + app.get('environment');
 var connectionString = 'mongodb://localhost:27017/' + dbName;
  
 mongoose.connect(connectionString);

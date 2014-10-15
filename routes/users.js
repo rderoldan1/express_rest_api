@@ -37,7 +37,6 @@ router.route('/users').post(function(request, response){
 
 // Update
 router.route('/users/:id').put(function(request, response){
-	console.log(request.params);
 	User.findOne({ _id: request.params.id }, function(err, user){
 		if(err){
 			return response.send(err);
