@@ -1,0 +1,23 @@
+{
+  "name": "first_node_api",
+  "version": "1.0.0",
+  "description": "My first node api plus mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ruben Espinosa",
+  "license": "ISC",
+  "scripts": {	
+    "start": "node ./bin/www"
+  },
+  "main":"./bin/www",
+  "engines": {
+     "node": "0.10.x"
+   },
+  "dependencies": {
+    "express": "~4.2.0",
+    "body-parser": "~1.0.0",
+    "mongoose": "~3.8.11"
+  }
+}
